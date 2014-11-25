@@ -17,20 +17,18 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- nav left -->
+    <!-- Sidebar left -->
     <div ng-include src="'views/partials/navbar-left.html'"></div>
     <!-- nav -->
     <div ng-include src="'views/partials/nav.html'"></div>
 
     <!-- container -->
-    <div class="page-wrap" snap-content snap-options="snapOpts">
-      <div clamss="row slide" ui-view></div>
+    <div class="wrapper">
+      <div class="container-fluid">
+        <div class="slide" ui-view></div>
+      </div>
     </div>
-    <!--
-    <div class="page-wrap" snap-content snap-options="snapOpts">
-      <div clamss="row slide" ui-view></div>
-    </div>
-    -->
+
 
     <!-- bower:js -->
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
